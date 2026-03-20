@@ -1,0 +1,17 @@
+{
+  "name": "ottoadman-sheet-script",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "typecheck": "tsc --noEmit",
+    "push": "clasp push",
+    "deploy": "npm run build && npm run push"
+  },
+  "devDependencies": {
+    "@google/clasp": "latest",
+    "@types/google-apps-script": "latest",
+    "esbuild": "latest",
+    "typescript": "latest"
+  }
+}
